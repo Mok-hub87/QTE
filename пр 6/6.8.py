@@ -1,0 +1,5 @@
+s=input('')
+q=s.replace('.','')
+w=q.split()
+print(len(w))
+print(w)
