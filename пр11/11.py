@@ -1,25 +1,19 @@
 import json
+import requests
+username = "kubernetes"
+url = f"https://api.github.com/users/{username}"
 def F():
+    f_json = requests.get(url).json()
     v = name.get()
-    f_json = """
-    {
-        'company': None
-        'created_at': '2010-06-16T20:39:03Z'
-        'email': None
-        'id': 5430905
-        'name': 'rust'
-        'url': 'https://api.github.com/users/rust-lang'
-    }"""
 
-    if v == 'rust':
+
+    if v == 'rust-lang':
         with open('C:\\Prog file\\Вывод.json', 'w') as file:
             json.dump(f_json, file)
 
 
     else:
         print('Данное имя не задано')
-
-
 
 
 
