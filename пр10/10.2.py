@@ -1,7 +1,6 @@
-file = open(r"C:\Users\Windows 10\Documents\Новая папка\Мохова А.Ю.-У-224-ввод2.txt",encoding='utf-8')
 file1 = open(r"C:\Users\Windows 10\Documents\Новая папка\Мохова А.Ю.-У-224-ввод2.txt",encoding='utf-8')
 file2 = open(r"C:\Users\Windows 10\Documents\Новая папка\Мохова А.Ю.-У-224-вывод2.txt", 'w+',encoding='utf-8')
-R = file.readlines()
+R = file1.readlines()
 T = file1.readlines(7)
 M = file1.readlines(5)
 P = file1.readlines(5)
@@ -31,5 +30,5 @@ def F(e,a,b,z):
             break
     file2.write('\n')
     file2.write(str(max(M)))
-F(([int(x) for x in R]),([int(x) for x in T]),([int(x) for x in M]),([int(x) for x in P]))
+    F(([int(x) for x in R]),([int(x) for x in T]),([int(x) for x in M]),([int(x) for x in P]))
 file2.close()
