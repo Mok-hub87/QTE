@@ -5,11 +5,12 @@ url = f"https://api.github.com/users/{username}"
 def F():
     f_json = requests.get(url).json()
     v = name.get()
+    inf = dict((key, data[key]) for key in ['company', 'created_at', 'email', 'id', 'name', 'url'] if key in data)
 
 
     if v == 'rust-lang':
         with open('C:\\Prog file\\Вывод.json', 'w') as file:
-            json.dump(f_json, file)
+            json.dump(inf, file)
 
 
     else:
