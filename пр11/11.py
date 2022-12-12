@@ -1,6 +1,6 @@
 import json
 import requests
-username = "kubernetes"
+username = "rust-lang"
 url = f"https://api.github.com/users/{username}"
 def F():
     f_json = requests.get(url).json()
